@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body> <script>
+let isleepyear= false;
+let isDivisibleBy4= year % 4==0;
+if(isDivisibleBy4){
+        let isdivisibleby100= year % 100==0;
+        if(isdivisibleby100){
+            let isdivisibleby400= year % 400==0;
+            if(isdivisibleby400){
+                isleepyear=true;
+            }
+        }
+    }
+if (isleepyear){
+    alert(year + 'is a leepyear');}
+else{
+    alert (year + "is not a leepyear");}
+</script>
+
+
+</body>
+</html>
